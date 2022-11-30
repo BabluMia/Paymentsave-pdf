@@ -2800,3 +2800,6 @@ form.sepa .footer img {
   margin-top: -25px;
   width: 200px;
 }
+@page {
+  margin: 0.5cm;
+}
