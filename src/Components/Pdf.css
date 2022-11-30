@@ -1,0 +1,2806 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    color: #000;
+  }
+  form {
+    counter-reset: section;
+  }
+  form.normal {
+    position: relative;
+    display: block;
+    width: 1000px;
+    margin: auto;
+    padding: 0 25px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+  }
+  form.normal h1 {
+    color: #28327d;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0 0 0;
+  }
+  form.normal p {
+    font-size: 12px;
+    line-height: 145%;
+    margin: 5px 0;
+  }
+  form.normal p.centre {
+    text-align: center;
+  }
+  form.normal .disclaimer-table {
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 0 10px;
+  }
+  form.normal .disclaimer-table th,
+  form.normal .disclaimer-table td {
+    padding: 5px;
+  }
+  form.normal .disclaimer-table th {
+    background-color: #c6c6c6;
+  }
+  form.normal .disclaimer-table td {
+    border-bottom: 1px solid #444;
+  }
+  form.normal .terms-number-list {
+    font-size: 12px;
+    line-height: 145%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  form.normal .terms-number-list li {
+    padding: 0.15em 0;
+    padding-left: 3.5em;
+    position: relative;
+  }
+  form.normal .terms-number-list li span {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  form.normal .form-code {
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webit-transform-origin: left;
+    transform-origin: left;
+    width: 0;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  form.normal .header {
+    position: relative;
+    display: block;
+    height: 100px;
+    overflow: hidden;
+  }
+  form.normal .header img {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 10px;
+    width: 125px;
+    height: auto;
+  }
+  form.normal .blue-fields {
+    position: absolute;
+    right: 1025px;
+    top: 0;
+    line-height: 20px;
+    padding: 0 10px;
+    display: block;
+    background-color: #e3ecf7;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    white-space: nowrap;
+  }
+  form.normal .blue-fields p {
+    margin: 0;
+    line-height: 20px;
+  }
+  form.normal .footer {
+    position: relative;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  form.normal .footer p {
+    font-size: 10px;
+    line-height: 14px;
+    opacity: 0.75;
+    margin-right: 180px;
+  }
+  form.normal .footer img {
+    bottom: 0;
+    position: absolute;
+    display: block;
+    right: 0;
+  }
+  form.normal .bo {
+    margin-top: 15px;
+  }
+  form.normal .page-break {
+    page-break-after: always;
+  }
+  form.normal section {
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 5px;
+  }
+  form.normal section.page-break {
+    page-break-after: always;
+  }
+  form.normal section a {
+    color: #28327d;
+  }
+  form.normal section h2 {
+    background-color: #28327d;
+    position: relative;
+    display: block;
+    color: #fff;
+    line-height: 30px;
+    font-size: 12px;
+    margin: 0;
+    padding: 0 5px;
+    font-weight: 500;
+  }
+  form.normal section > h2:first-child:before {
+    position: absolute;
+    counter-increment: section;
+    content: counter(section);
+    right: 10px;
+  }
+  form.normal section .row {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #777374;
+    padding: 0;
+    overflow: hidden;
+  }
+  form.normal section .row.blue {
+    background-color: #e3ecf7;
+  }
+  form.normal section .row.grey {
+    background-color: #ddd;
+  }
+  form.normal section .row.light-grey {
+    background-color: #f3f3f3;
+  }
+  form.normal section .row.navy-blue {
+    background-color: #28327d;
+  }
+  form.normal section .row.navy-blue label {
+    color: #fff;
+  }
+  form.normal section .row.signature {
+    padding: 0 5px;
+    margin-top: 15px;
+  }
+  form.normal section .row.consent {
+    padding-left: 25px;
+  }
+  form.normal section .row.margin-bottom {
+    margin-bottom: 25px;
+  }
+  form.normal section .row.no-border {
+    border-bottom: 0;
+  }
+  form.normal section .row .reciept-header-input {
+    display: block;
+    float: left;
+  }
+  form.normal section .row .reciept-header-input .input {
+    width: 31px;
+  }
+  form.normal section .row .reciept-header-input .input input[type="text"] {
+    border: 1px solid #444 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    width: 30px !important;
+    text-align: center;
+    float: left;
+  }
+  form.normal section .row .reciept-header-input:last-child .input {
+    width: 32px;
+  }
+  form.normal
+    section
+    .row
+    .reciept-header-input:last-child
+    .input
+    input[type="text"] {
+    border-right: 1px solid #444 !important;
+  }
+  form.normal
+    section
+    .row
+    .reciept-header-row:last-child
+    .reciept-header-input
+    .input
+    input[type="text"] {
+    border-bottom: 1px solid #444 !important;
+  }
+  form.normal section .row .inline-text-input {
+    background-color: transparent;
+    border: 0;
+    width: 100px;
+    line-height: 20px;
+    font-size: 12px;
+    margin: 0;
+    color: inherit;
+    padding: 2px 0;
+    outline: 0;
+    transition: background 0.3s;
+  }
+  form.normal section .row .inline-text-input:hover,
+  form.normal section .row .inline-text-input:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  form.normal section .row .cols-1,
+  form.normal section .row .cols-1-7th,
+  form.normal section .row .cols-1-5,
+  form.normal section .row .cols-1-6,
+  form.normal section .row .cols-1-75,
+  form.normal section .row .cols-2,
+  form.normal section .row .cols-2-25,
+  form.normal section .row .cols-2-5,
+  form.normal section .row .cols-3,
+  form.normal section .row .cols-3-3,
+  form.normal section .row .cols-4,
+  form.normal section .row .cols-5,
+  form.normal section .row .cols-6,
+  form.normal section .row .cols-6-6,
+  form.normal section .row .cols-7,
+  form.normal section .row .cols-7-5,
+  form.normal section .row .cols-8,
+  form.normal section .row .cols-9,
+  form.normal section .row .cols-10 {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 5px;
+  }
+  form.normal section .row .cols-1.no-padding-top,
+  form.normal section .row .cols-1-7th.no-padding-top,
+  form.normal section .row .cols-1-5.no-padding-top,
+  form.normal section .row .cols-1-6.no-padding-top,
+  form.normal section .row .cols-1-75.no-padding-top,
+  form.normal section .row .cols-2.no-padding-top,
+  form.normal section .row .cols-2-25.no-padding-top,
+  form.normal section .row .cols-2-5.no-padding-top,
+  form.normal section .row .cols-3.no-padding-top,
+  form.normal section .row .cols-3-3.no-padding-top,
+  form.normal section .row .cols-4.no-padding-top,
+  form.normal section .row .cols-5.no-padding-top,
+  form.normal section .row .cols-6.no-padding-top,
+  form.normal section .row .cols-6-6.no-padding-top,
+  form.normal section .row .cols-7.no-padding-top,
+  form.normal section .row .cols-7-5.no-padding-top,
+  form.normal section .row .cols-8.no-padding-top,
+  form.normal section .row .cols-9.no-padding-top,
+  form.normal section .row .cols-10.no-padding-top {
+    padding-top: 0;
+  }
+  form.normal section .row .cols-1.push-cols-0-5,
+  form.normal section .row .cols-1-7th.push-cols-0-5,
+  form.normal section .row .cols-1-5.push-cols-0-5,
+  form.normal section .row .cols-1-6.push-cols-0-5,
+  form.normal section .row .cols-1-75.push-cols-0-5,
+  form.normal section .row .cols-2.push-cols-0-5,
+  form.normal section .row .cols-2-25.push-cols-0-5,
+  form.normal section .row .cols-2-5.push-cols-0-5,
+  form.normal section .row .cols-3.push-cols-0-5,
+  form.normal section .row .cols-3-3.push-cols-0-5,
+  form.normal section .row .cols-4.push-cols-0-5,
+  form.normal section .row .cols-5.push-cols-0-5,
+  form.normal section .row .cols-6.push-cols-0-5,
+  form.normal section .row .cols-6-6.push-cols-0-5,
+  form.normal section .row .cols-7.push-cols-0-5,
+  form.normal section .row .cols-7-5.push-cols-0-5,
+  form.normal section .row .cols-8.push-cols-0-5,
+  form.normal section .row .cols-9.push-cols-0-5,
+  form.normal section .row .cols-10.push-cols-0-5 {
+    margin-left: 50px;
+  }
+  form.normal section .row .cols-1.push-cols-2,
+  form.normal section .row .cols-1-7th.push-cols-2,
+  form.normal section .row .cols-1-5.push-cols-2,
+  form.normal section .row .cols-1-6.push-cols-2,
+  form.normal section .row .cols-1-75.push-cols-2,
+  form.normal section .row .cols-2.push-cols-2,
+  form.normal section .row .cols-2-25.push-cols-2,
+  form.normal section .row .cols-2-5.push-cols-2,
+  form.normal section .row .cols-3.push-cols-2,
+  form.normal section .row .cols-3-3.push-cols-2,
+  form.normal section .row .cols-4.push-cols-2,
+  form.normal section .row .cols-5.push-cols-2,
+  form.normal section .row .cols-6.push-cols-2,
+  form.normal section .row .cols-6-6.push-cols-2,
+  form.normal section .row .cols-7.push-cols-2,
+  form.normal section .row .cols-7-5.push-cols-2,
+  form.normal section .row .cols-8.push-cols-2,
+  form.normal section .row .cols-9.push-cols-2,
+  form.normal section .row .cols-10.push-cols-2 {
+    margin-left: 200px;
+  }
+  form.normal section .row .cols-1.grey,
+  form.normal section .row .cols-1-7th.grey,
+  form.normal section .row .cols-1-5.grey,
+  form.normal section .row .cols-1-6.grey,
+  form.normal section .row .cols-1-75.grey,
+  form.normal section .row .cols-2.grey,
+  form.normal section .row .cols-2-25.grey,
+  form.normal section .row .cols-2-5.grey,
+  form.normal section .row .cols-3.grey,
+  form.normal section .row .cols-3-3.grey,
+  form.normal section .row .cols-4.grey,
+  form.normal section .row .cols-5.grey,
+  form.normal section .row .cols-6.grey,
+  form.normal section .row .cols-6-6.grey,
+  form.normal section .row .cols-7.grey,
+  form.normal section .row .cols-7-5.grey,
+  form.normal section .row .cols-8.grey,
+  form.normal section .row .cols-9.grey,
+  form.normal section .row .cols-10.grey {
+    background-color: #ddd;
+  }
+  form.normal section .row .cols-1.light-grey,
+  form.normal section .row .cols-1-7th.light-grey,
+  form.normal section .row .cols-1-5.light-grey,
+  form.normal section .row .cols-1-6.light-grey,
+  form.normal section .row .cols-1-75.light-grey,
+  form.normal section .row .cols-2.light-grey,
+  form.normal section .row .cols-2-25.light-grey,
+  form.normal section .row .cols-2-5.light-grey,
+  form.normal section .row .cols-3.light-grey,
+  form.normal section .row .cols-3-3.light-grey,
+  form.normal section .row .cols-4.light-grey,
+  form.normal section .row .cols-5.light-grey,
+  form.normal section .row .cols-6.light-grey,
+  form.normal section .row .cols-6-6.light-grey,
+  form.normal section .row .cols-7.light-grey,
+  form.normal section .row .cols-7-5.light-grey,
+  form.normal section .row .cols-8.light-grey,
+  form.normal section .row .cols-9.light-grey,
+  form.normal section .row .cols-10.light-grey {
+    background-color: #f3f3f3;
+  }
+  form.normal section .row .cols-1.blue,
+  form.normal section .row .cols-1-7th.blue,
+  form.normal section .row .cols-1-5.blue,
+  form.normal section .row .cols-1-6.blue,
+  form.normal section .row .cols-1-75.blue,
+  form.normal section .row .cols-2.blue,
+  form.normal section .row .cols-2-25.blue,
+  form.normal section .row .cols-2-5.blue,
+  form.normal section .row .cols-3.blue,
+  form.normal section .row .cols-3-3.blue,
+  form.normal section .row .cols-4.blue,
+  form.normal section .row .cols-5.blue,
+  form.normal section .row .cols-6.blue,
+  form.normal section .row .cols-6-6.blue,
+  form.normal section .row .cols-7.blue,
+  form.normal section .row .cols-7-5.blue,
+  form.normal section .row .cols-8.blue,
+  form.normal section .row .cols-9.blue,
+  form.normal section .row .cols-10.blue {
+    background-color: #e3ecf7;
+  }
+  form.normal section .row .cols-1.dark-blue,
+  form.normal section .row .cols-1-7th.dark-blue,
+  form.normal section .row .cols-1-5.dark-blue,
+  form.normal section .row .cols-1-6.dark-blue,
+  form.normal section .row .cols-1-75.dark-blue,
+  form.normal section .row .cols-2.dark-blue,
+  form.normal section .row .cols-2-25.dark-blue,
+  form.normal section .row .cols-2-5.dark-blue,
+  form.normal section .row .cols-3.dark-blue,
+  form.normal section .row .cols-3-3.dark-blue,
+  form.normal section .row .cols-4.dark-blue,
+  form.normal section .row .cols-5.dark-blue,
+  form.normal section .row .cols-6.dark-blue,
+  form.normal section .row .cols-6-6.dark-blue,
+  form.normal section .row .cols-7.dark-blue,
+  form.normal section .row .cols-7-5.dark-blue,
+  form.normal section .row .cols-8.dark-blue,
+  form.normal section .row .cols-9.dark-blue,
+  form.normal section .row .cols-10.dark-blue {
+    background-color: #d7dde8;
+  }
+  form.normal section .row .cols-1.text-center,
+  form.normal section .row .cols-1-7th.text-center,
+  form.normal section .row .cols-1-5.text-center,
+  form.normal section .row .cols-1-6.text-center,
+  form.normal section .row .cols-1-75.text-center,
+  form.normal section .row .cols-2.text-center,
+  form.normal section .row .cols-2-25.text-center,
+  form.normal section .row .cols-2-5.text-center,
+  form.normal section .row .cols-3.text-center,
+  form.normal section .row .cols-3-3.text-center,
+  form.normal section .row .cols-4.text-center,
+  form.normal section .row .cols-5.text-center,
+  form.normal section .row .cols-6.text-center,
+  form.normal section .row .cols-6-6.text-center,
+  form.normal section .row .cols-7.text-center,
+  form.normal section .row .cols-7-5.text-center,
+  form.normal section .row .cols-8.text-center,
+  form.normal section .row .cols-9.text-center,
+  form.normal section .row .cols-10.text-center {
+    text-align: center;
+  }
+  form.normal section .row .cols-1.text-justify,
+  form.normal section .row .cols-1-7th.text-justify,
+  form.normal section .row .cols-1-5.text-justify,
+  form.normal section .row .cols-1-6.text-justify,
+  form.normal section .row .cols-1-75.text-justify,
+  form.normal section .row .cols-2.text-justify,
+  form.normal section .row .cols-2-25.text-justify,
+  form.normal section .row .cols-2-5.text-justify,
+  form.normal section .row .cols-3.text-justify,
+  form.normal section .row .cols-3-3.text-justify,
+  form.normal section .row .cols-4.text-justify,
+  form.normal section .row .cols-5.text-justify,
+  form.normal section .row .cols-6.text-justify,
+  form.normal section .row .cols-6-6.text-justify,
+  form.normal section .row .cols-7.text-justify,
+  form.normal section .row .cols-7-5.text-justify,
+  form.normal section .row .cols-8.text-justify,
+  form.normal section .row .cols-9.text-justify,
+  form.normal section .row .cols-10.text-justify {
+    text-align: justify;
+  }
+  form.normal section .row .cols-1.error > label,
+  form.normal section .row .cols-1-7th.error > label,
+  form.normal section .row .cols-1-5.error > label,
+  form.normal section .row .cols-1-6.error > label,
+  form.normal section .row .cols-1-75.error > label,
+  form.normal section .row .cols-2.error > label,
+  form.normal section .row .cols-2-25.error > label,
+  form.normal section .row .cols-2-5.error > label,
+  form.normal section .row .cols-3.error > label,
+  form.normal section .row .cols-3-3.error > label,
+  form.normal section .row .cols-4.error > label,
+  form.normal section .row .cols-5.error > label,
+  form.normal section .row .cols-6.error > label,
+  form.normal section .row .cols-6-6.error > label,
+  form.normal section .row .cols-7.error > label,
+  form.normal section .row .cols-7-5.error > label,
+  form.normal section .row .cols-8.error > label,
+  form.normal section .row .cols-9.error > label,
+  form.normal section .row .cols-10.error > label {
+    color: red;
+  }
+  form.normal section .row .cols-1.percent .input input,
+  form.normal section .row .cols-1-7th.percent .input input,
+  form.normal section .row .cols-1-5.percent .input input,
+  form.normal section .row .cols-1-6.percent .input input,
+  form.normal section .row .cols-1-75.percent .input input,
+  form.normal section .row .cols-2.percent .input input,
+  form.normal section .row .cols-2-25.percent .input input,
+  form.normal section .row .cols-2-5.percent .input input,
+  form.normal section .row .cols-3.percent .input input,
+  form.normal section .row .cols-3-3.percent .input input,
+  form.normal section .row .cols-4.percent .input input,
+  form.normal section .row .cols-5.percent .input input,
+  form.normal section .row .cols-6.percent .input input,
+  form.normal section .row .cols-6-6.percent .input input,
+  form.normal section .row .cols-7.percent .input input,
+  form.normal section .row .cols-7-5.percent .input input,
+  form.normal section .row .cols-8.percent .input input,
+  form.normal section .row .cols-9.percent .input input,
+  form.normal section .row .cols-10.percent .input input {
+    box-sizing: border-box;
+    padding-right: 18px !important;
+    text-align: right;
+  }
+  form.normal section .row .cols-1.percent .input:after,
+  form.normal section .row .cols-1-7th.percent .input:after,
+  form.normal section .row .cols-1-5.percent .input:after,
+  form.normal section .row .cols-1-6.percent .input:after,
+  form.normal section .row .cols-1-75.percent .input:after,
+  form.normal section .row .cols-2.percent .input:after,
+  form.normal section .row .cols-2-25.percent .input:after,
+  form.normal section .row .cols-2-5.percent .input:after,
+  form.normal section .row .cols-3.percent .input:after,
+  form.normal section .row .cols-3-3.percent .input:after,
+  form.normal section .row .cols-4.percent .input:after,
+  form.normal section .row .cols-5.percent .input:after,
+  form.normal section .row .cols-6.percent .input:after,
+  form.normal section .row .cols-6-6.percent .input:after,
+  form.normal section .row .cols-7.percent .input:after,
+  form.normal section .row .cols-7-5.percent .input:after,
+  form.normal section .row .cols-8.percent .input:after,
+  form.normal section .row .cols-9.percent .input:after,
+  form.normal section .row .cols-10.percent .input:after {
+    content: "%";
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    line-height: 24px;
+  }
+  form.normal section .row .cols-1.percent.deposits .input input,
+  form.normal section .row .cols-1-7th.percent.deposits .input input,
+  form.normal section .row .cols-1-5.percent.deposits .input input,
+  form.normal section .row .cols-1-6.percent.deposits .input input,
+  form.normal section .row .cols-1-75.percent.deposits .input input,
+  form.normal section .row .cols-2.percent.deposits .input input,
+  form.normal section .row .cols-2-25.percent.deposits .input input,
+  form.normal section .row .cols-2-5.percent.deposits .input input,
+  form.normal section .row .cols-3.percent.deposits .input input,
+  form.normal section .row .cols-3-3.percent.deposits .input input,
+  form.normal section .row .cols-4.percent.deposits .input input,
+  form.normal section .row .cols-5.percent.deposits .input input,
+  form.normal section .row .cols-6.percent.deposits .input input,
+  form.normal section .row .cols-6-6.percent.deposits .input input,
+  form.normal section .row .cols-7.percent.deposits .input input,
+  form.normal section .row .cols-7-5.percent.deposits .input input,
+  form.normal section .row .cols-8.percent.deposits .input input,
+  form.normal section .row .cols-9.percent.deposits .input input,
+  form.normal section .row .cols-10.percent.deposits .input input {
+    padding-right: 170px !important;
+  }
+  form.normal section .row .cols-1.percent.deposits .input:after,
+  form.normal section .row .cols-1-7th.percent.deposits .input:after,
+  form.normal section .row .cols-1-5.percent.deposits .input:after,
+  form.normal section .row .cols-1-6.percent.deposits .input:after,
+  form.normal section .row .cols-1-75.percent.deposits .input:after,
+  form.normal section .row .cols-2.percent.deposits .input:after,
+  form.normal section .row .cols-2-25.percent.deposits .input:after,
+  form.normal section .row .cols-2-5.percent.deposits .input:after,
+  form.normal section .row .cols-3.percent.deposits .input:after,
+  form.normal section .row .cols-3-3.percent.deposits .input:after,
+  form.normal section .row .cols-4.percent.deposits .input:after,
+  form.normal section .row .cols-5.percent.deposits .input:after,
+  form.normal section .row .cols-6.percent.deposits .input:after,
+  form.normal section .row .cols-6-6.percent.deposits .input:after,
+  form.normal section .row .cols-7.percent.deposits .input:after,
+  form.normal section .row .cols-7-5.percent.deposits .input:after,
+  form.normal section .row .cols-8.percent.deposits .input:after,
+  form.normal section .row .cols-9.percent.deposits .input:after,
+  form.normal section .row .cols-10.percent.deposits .input:after {
+    content: "% of (anticipated) turnover p.a.";
+  }
+  form.normal section .row .cols-1.percent.pa .input input,
+  form.normal section .row .cols-1-7th.percent.pa .input input,
+  form.normal section .row .cols-1-5.percent.pa .input input,
+  form.normal section .row .cols-1-6.percent.pa .input input,
+  form.normal section .row .cols-1-75.percent.pa .input input,
+  form.normal section .row .cols-2.percent.pa .input input,
+  form.normal section .row .cols-2-25.percent.pa .input input,
+  form.normal section .row .cols-2-5.percent.pa .input input,
+  form.normal section .row .cols-3.percent.pa .input input,
+  form.normal section .row .cols-3-3.percent.pa .input input,
+  form.normal section .row .cols-4.percent.pa .input input,
+  form.normal section .row .cols-5.percent.pa .input input,
+  form.normal section .row .cols-6.percent.pa .input input,
+  form.normal section .row .cols-6-6.percent.pa .input input,
+  form.normal section .row .cols-7.percent.pa .input input,
+  form.normal section .row .cols-7-5.percent.pa .input input,
+  form.normal section .row .cols-8.percent.pa .input input,
+  form.normal section .row .cols-9.percent.pa .input input,
+  form.normal section .row .cols-10.percent.pa .input input {
+    padding-right: 40px !important;
+  }
+  form.normal section .row .cols-1.percent.pa .input:after,
+  form.normal section .row .cols-1-7th.percent.pa .input:after,
+  form.normal section .row .cols-1-5.percent.pa .input:after,
+  form.normal section .row .cols-1-6.percent.pa .input:after,
+  form.normal section .row .cols-1-75.percent.pa .input:after,
+  form.normal section .row .cols-2.percent.pa .input:after,
+  form.normal section .row .cols-2-25.percent.pa .input:after,
+  form.normal section .row .cols-2-5.percent.pa .input:after,
+  form.normal section .row .cols-3.percent.pa .input:after,
+  form.normal section .row .cols-3-3.percent.pa .input:after,
+  form.normal section .row .cols-4.percent.pa .input:after,
+  form.normal section .row .cols-5.percent.pa .input:after,
+  form.normal section .row .cols-6.percent.pa .input:after,
+  form.normal section .row .cols-6-6.percent.pa .input:after,
+  form.normal section .row .cols-7.percent.pa .input:after,
+  form.normal section .row .cols-7-5.percent.pa .input:after,
+  form.normal section .row .cols-8.percent.pa .input:after,
+  form.normal section .row .cols-9.percent.pa .input:after,
+  form.normal section .row .cols-10.percent.pa .input:after {
+    content: "% p.a.";
+  }
+  form.normal section .row .cols-1.pound .input:after,
+  form.normal section .row .cols-1-7th.pound .input:after,
+  form.normal section .row .cols-1-5.pound .input:after,
+  form.normal section .row .cols-1-6.pound .input:after,
+  form.normal section .row .cols-1-75.pound .input:after,
+  form.normal section .row .cols-2.pound .input:after,
+  form.normal section .row .cols-2-25.pound .input:after,
+  form.normal section .row .cols-2-5.pound .input:after,
+  form.normal section .row .cols-3.pound .input:after,
+  form.normal section .row .cols-3-3.pound .input:after,
+  form.normal section .row .cols-4.pound .input:after,
+  form.normal section .row .cols-5.pound .input:after,
+  form.normal section .row .cols-6.pound .input:after,
+  form.normal section .row .cols-6-6.pound .input:after,
+  form.normal section .row .cols-7.pound .input:after,
+  form.normal section .row .cols-7-5.pound .input:after,
+  form.normal section .row .cols-8.pound .input:after,
+  form.normal section .row .cols-9.pound .input:after,
+  form.normal section .row .cols-10.pound .input:after,
+  form.normal section .row .cols-1.euro .input:after,
+  form.normal section .row .cols-1-7th.euro .input:after,
+  form.normal section .row .cols-1-5.euro .input:after,
+  form.normal section .row .cols-1-6.euro .input:after,
+  form.normal section .row .cols-1-75.euro .input:after,
+  form.normal section .row .cols-2.euro .input:after,
+  form.normal section .row .cols-2-25.euro .input:after,
+  form.normal section .row .cols-2-5.euro .input:after,
+  form.normal section .row .cols-3.euro .input:after,
+  form.normal section .row .cols-3-3.euro .input:after,
+  form.normal section .row .cols-4.euro .input:after,
+  form.normal section .row .cols-5.euro .input:after,
+  form.normal section .row .cols-6.euro .input:after,
+  form.normal section .row .cols-6-6.euro .input:after,
+  form.normal section .row .cols-7.euro .input:after,
+  form.normal section .row .cols-7-5.euro .input:after,
+  form.normal section .row .cols-8.euro .input:after,
+  form.normal section .row .cols-9.euro .input:after,
+  form.normal section .row .cols-10.euro .input:after {
+    content: "\00A3";
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 24px;
+  }
+  form.normal section .row .cols-1.pound .input input[type="text"],
+  form.normal section .row .cols-1-7th.pound .input input[type="text"],
+  form.normal section .row .cols-1-5.pound .input input[type="text"],
+  form.normal section .row .cols-1-6.pound .input input[type="text"],
+  form.normal section .row .cols-1-75.pound .input input[type="text"],
+  form.normal section .row .cols-2.pound .input input[type="text"],
+  form.normal section .row .cols-2-25.pound .input input[type="text"],
+  form.normal section .row .cols-2-5.pound .input input[type="text"],
+  form.normal section .row .cols-3.pound .input input[type="text"],
+  form.normal section .row .cols-3-3.pound .input input[type="text"],
+  form.normal section .row .cols-4.pound .input input[type="text"],
+  form.normal section .row .cols-5.pound .input input[type="text"],
+  form.normal section .row .cols-6.pound .input input[type="text"],
+  form.normal section .row .cols-6-6.pound .input input[type="text"],
+  form.normal section .row .cols-7.pound .input input[type="text"],
+  form.normal section .row .cols-7-5.pound .input input[type="text"],
+  form.normal section .row .cols-8.pound .input input[type="text"],
+  form.normal section .row .cols-9.pound .input input[type="text"],
+  form.normal section .row .cols-10.pound .input input[type="text"],
+  form.normal section .row .cols-1.euro .input input[type="text"],
+  form.normal section .row .cols-1-7th.euro .input input[type="text"],
+  form.normal section .row .cols-1-5.euro .input input[type="text"],
+  form.normal section .row .cols-1-6.euro .input input[type="text"],
+  form.normal section .row .cols-1-75.euro .input input[type="text"],
+  form.normal section .row .cols-2.euro .input input[type="text"],
+  form.normal section .row .cols-2-25.euro .input input[type="text"],
+  form.normal section .row .cols-2-5.euro .input input[type="text"],
+  form.normal section .row .cols-3.euro .input input[type="text"],
+  form.normal section .row .cols-3-3.euro .input input[type="text"],
+  form.normal section .row .cols-4.euro .input input[type="text"],
+  form.normal section .row .cols-5.euro .input input[type="text"],
+  form.normal section .row .cols-6.euro .input input[type="text"],
+  form.normal section .row .cols-6-6.euro .input input[type="text"],
+  form.normal section .row .cols-7.euro .input input[type="text"],
+  form.normal section .row .cols-7-5.euro .input input[type="text"],
+  form.normal section .row .cols-8.euro .input input[type="text"],
+  form.normal section .row .cols-9.euro .input input[type="text"],
+  form.normal section .row .cols-10.euro .input input[type="text"] {
+    padding-left: calc(10px);
+    width: calc(100% - 10px);
+  }
+  form.normal section .row .cols-1.euro .input:after,
+  form.normal section .row .cols-1-7th.euro .input:after,
+  form.normal section .row .cols-1-5.euro .input:after,
+  form.normal section .row .cols-1-6.euro .input:after,
+  form.normal section .row .cols-1-75.euro .input:after,
+  form.normal section .row .cols-2.euro .input:after,
+  form.normal section .row .cols-2-25.euro .input:after,
+  form.normal section .row .cols-2-5.euro .input:after,
+  form.normal section .row .cols-3.euro .input:after,
+  form.normal section .row .cols-3-3.euro .input:after,
+  form.normal section .row .cols-4.euro .input:after,
+  form.normal section .row .cols-5.euro .input:after,
+  form.normal section .row .cols-6.euro .input:after,
+  form.normal section .row .cols-6-6.euro .input:after,
+  form.normal section .row .cols-7.euro .input:after,
+  form.normal section .row .cols-7-5.euro .input:after,
+  form.normal section .row .cols-8.euro .input:after,
+  form.normal section .row .cols-9.euro .input:after,
+  form.normal section .row .cols-10.euro .input:after {
+    content: "\20AC";
+  }
+  form.normal section .row .cols-1.signature img,
+  form.normal section .row .cols-1-7th.signature img,
+  form.normal section .row .cols-1-5.signature img,
+  form.normal section .row .cols-1-6.signature img,
+  form.normal section .row .cols-1-75.signature img,
+  form.normal section .row .cols-2.signature img,
+  form.normal section .row .cols-2-25.signature img,
+  form.normal section .row .cols-2-5.signature img,
+  form.normal section .row .cols-3.signature img,
+  form.normal section .row .cols-3-3.signature img,
+  form.normal section .row .cols-4.signature img,
+  form.normal section .row .cols-5.signature img,
+  form.normal section .row .cols-6.signature img,
+  form.normal section .row .cols-6-6.signature img,
+  form.normal section .row .cols-7.signature img,
+  form.normal section .row .cols-7-5.signature img,
+  form.normal section .row .cols-8.signature img,
+  form.normal section .row .cols-9.signature img,
+  form.normal section .row .cols-10.signature img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  form.normal section .row .cols-1:after,
+  form.normal section .row .cols-1-7th:after,
+  form.normal section .row .cols-1-5:after,
+  form.normal section .row .cols-1-6:after,
+  form.normal section .row .cols-1-75:after,
+  form.normal section .row .cols-2:after,
+  form.normal section .row .cols-2-25:after,
+  form.normal section .row .cols-2-5:after,
+  form.normal section .row .cols-3:after,
+  form.normal section .row .cols-3-3:after,
+  form.normal section .row .cols-4:after,
+  form.normal section .row .cols-5:after,
+  form.normal section .row .cols-6:after,
+  form.normal section .row .cols-6-6:after,
+  form.normal section .row .cols-7:after,
+  form.normal section .row .cols-7-5:after,
+  form.normal section .row .cols-8:after,
+  form.normal section .row .cols-9:after,
+  form.normal section .row .cols-10:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 600px;
+    background-color: #777374;
+  }
+  form.normal section .row .cols-1.no-border:after,
+  form.normal section .row .cols-1-7th.no-border:after,
+  form.normal section .row .cols-1-5.no-border:after,
+  form.normal section .row .cols-1-6.no-border:after,
+  form.normal section .row .cols-1-75.no-border:after,
+  form.normal section .row .cols-2.no-border:after,
+  form.normal section .row .cols-2-25.no-border:after,
+  form.normal section .row .cols-2-5.no-border:after,
+  form.normal section .row .cols-3.no-border:after,
+  form.normal section .row .cols-3-3.no-border:after,
+  form.normal section .row .cols-4.no-border:after,
+  form.normal section .row .cols-5.no-border:after,
+  form.normal section .row .cols-6.no-border:after,
+  form.normal section .row .cols-6-6.no-border:after,
+  form.normal section .row .cols-7.no-border:after,
+  form.normal section .row .cols-7-5.no-border:after,
+  form.normal section .row .cols-8.no-border:after,
+  form.normal section .row .cols-9.no-border:after,
+  form.normal section .row .cols-10.no-border:after,
+  form.normal section .row .cols-1:last-child:after,
+  form.normal section .row .cols-1-7th:last-child:after,
+  form.normal section .row .cols-1-5:last-child:after,
+  form.normal section .row .cols-1-6:last-child:after,
+  form.normal section .row .cols-1-75:last-child:after,
+  form.normal section .row .cols-2:last-child:after,
+  form.normal section .row .cols-2-25:last-child:after,
+  form.normal section .row .cols-2-5:last-child:after,
+  form.normal section .row .cols-3:last-child:after,
+  form.normal section .row .cols-3-3:last-child:after,
+  form.normal section .row .cols-4:last-child:after,
+  form.normal section .row .cols-5:last-child:after,
+  form.normal section .row .cols-6:last-child:after,
+  form.normal section .row .cols-6-6:last-child:after,
+  form.normal section .row .cols-7:last-child:after,
+  form.normal section .row .cols-7-5:last-child:after,
+  form.normal section .row .cols-8:last-child:after,
+  form.normal section .row .cols-9:last-child:after,
+  form.normal section .row .cols-10:last-child:after {
+    display: none;
+  }
+  form.normal section .row .cols-1 sup,
+  form.normal section .row .cols-1-7th sup,
+  form.normal section .row .cols-1-5 sup,
+  form.normal section .row .cols-1-6 sup,
+  form.normal section .row .cols-1-75 sup,
+  form.normal section .row .cols-2 sup,
+  form.normal section .row .cols-2-25 sup,
+  form.normal section .row .cols-2-5 sup,
+  form.normal section .row .cols-3 sup,
+  form.normal section .row .cols-3-3 sup,
+  form.normal section .row .cols-4 sup,
+  form.normal section .row .cols-5 sup,
+  form.normal section .row .cols-6 sup,
+  form.normal section .row .cols-6-6 sup,
+  form.normal section .row .cols-7 sup,
+  form.normal section .row .cols-7-5 sup,
+  form.normal section .row .cols-8 sup,
+  form.normal section .row .cols-9 sup,
+  form.normal section .row .cols-10 sup,
+  form.normal section .row .cols-1 sub,
+  form.normal section .row .cols-1-7th sub,
+  form.normal section .row .cols-1-5 sub,
+  form.normal section .row .cols-1-6 sub,
+  form.normal section .row .cols-1-75 sub,
+  form.normal section .row .cols-2 sub,
+  form.normal section .row .cols-2-25 sub,
+  form.normal section .row .cols-2-5 sub,
+  form.normal section .row .cols-3 sub,
+  form.normal section .row .cols-3-3 sub,
+  form.normal section .row .cols-4 sub,
+  form.normal section .row .cols-5 sub,
+  form.normal section .row .cols-6 sub,
+  form.normal section .row .cols-6-6 sub,
+  form.normal section .row .cols-7 sub,
+  form.normal section .row .cols-7-5 sub,
+  form.normal section .row .cols-8 sub,
+  form.normal section .row .cols-9 sub,
+  form.normal section .row .cols-10 sub {
+    line-height: 0;
+  }
+  form.normal section .row .cols-1 .row,
+  form.normal section .row .cols-1-7th .row,
+  form.normal section .row .cols-1-5 .row,
+  form.normal section .row .cols-1-6 .row,
+  form.normal section .row .cols-1-75 .row,
+  form.normal section .row .cols-2 .row,
+  form.normal section .row .cols-2-25 .row,
+  form.normal section .row .cols-2-5 .row,
+  form.normal section .row .cols-3 .row,
+  form.normal section .row .cols-3-3 .row,
+  form.normal section .row .cols-4 .row,
+  form.normal section .row .cols-5 .row,
+  form.normal section .row .cols-6 .row,
+  form.normal section .row .cols-6-6 .row,
+  form.normal section .row .cols-7 .row,
+  form.normal section .row .cols-7-5 .row,
+  form.normal section .row .cols-8 .row,
+  form.normal section .row .cols-9 .row,
+  form.normal section .row .cols-10 .row {
+    margin: 0 -5px;
+  }
+  form.normal section .row .cols-1 .row:first-child,
+  form.normal section .row .cols-1-7th .row:first-child,
+  form.normal section .row .cols-1-5 .row:first-child,
+  form.normal section .row .cols-1-6 .row:first-child,
+  form.normal section .row .cols-1-75 .row:first-child,
+  form.normal section .row .cols-2 .row:first-child,
+  form.normal section .row .cols-2-25 .row:first-child,
+  form.normal section .row .cols-2-5 .row:first-child,
+  form.normal section .row .cols-3 .row:first-child,
+  form.normal section .row .cols-3-3 .row:first-child,
+  form.normal section .row .cols-4 .row:first-child,
+  form.normal section .row .cols-5 .row:first-child,
+  form.normal section .row .cols-6 .row:first-child,
+  form.normal section .row .cols-6-6 .row:first-child,
+  form.normal section .row .cols-7 .row:first-child,
+  form.normal section .row .cols-7-5 .row:first-child,
+  form.normal section .row .cols-8 .row:first-child,
+  form.normal section .row .cols-9 .row:first-child,
+  form.normal section .row .cols-10 .row:first-child {
+    margin-top: -5px;
+  }
+  form.normal section .row .cols-1 .row:last-child,
+  form.normal section .row .cols-1-7th .row:last-child,
+  form.normal section .row .cols-1-5 .row:last-child,
+  form.normal section .row .cols-1-6 .row:last-child,
+  form.normal section .row .cols-1-75 .row:last-child,
+  form.normal section .row .cols-2 .row:last-child,
+  form.normal section .row .cols-2-25 .row:last-child,
+  form.normal section .row .cols-2-5 .row:last-child,
+  form.normal section .row .cols-3 .row:last-child,
+  form.normal section .row .cols-3-3 .row:last-child,
+  form.normal section .row .cols-4 .row:last-child,
+  form.normal section .row .cols-5 .row:last-child,
+  form.normal section .row .cols-6 .row:last-child,
+  form.normal section .row .cols-6-6 .row:last-child,
+  form.normal section .row .cols-7 .row:last-child,
+  form.normal section .row .cols-7-5 .row:last-child,
+  form.normal section .row .cols-8 .row:last-child,
+  form.normal section .row .cols-9 .row:last-child,
+  form.normal section .row .cols-10 .row:last-child {
+    border-bottom: 0;
+    margin-bottom: -5px;
+  }
+  form.normal section .row .cols-1 > label,
+  form.normal section .row .cols-1-7th > label,
+  form.normal section .row .cols-1-5 > label,
+  form.normal section .row .cols-1-6 > label,
+  form.normal section .row .cols-1-75 > label,
+  form.normal section .row .cols-2 > label,
+  form.normal section .row .cols-2-25 > label,
+  form.normal section .row .cols-2-5 > label,
+  form.normal section .row .cols-3 > label,
+  form.normal section .row .cols-3-3 > label,
+  form.normal section .row .cols-4 > label,
+  form.normal section .row .cols-5 > label,
+  form.normal section .row .cols-6 > label,
+  form.normal section .row .cols-6-6 > label,
+  form.normal section .row .cols-7 > label,
+  form.normal section .row .cols-7-5 > label,
+  form.normal section .row .cols-8 > label,
+  form.normal section .row .cols-9 > label,
+  form.normal section .row .cols-10 > label {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  form.normal section .row .cols-1 > label span,
+  form.normal section .row .cols-1-7th > label span,
+  form.normal section .row .cols-1-5 > label span,
+  form.normal section .row .cols-1-6 > label span,
+  form.normal section .row .cols-1-75 > label span,
+  form.normal section .row .cols-2 > label span,
+  form.normal section .row .cols-2-25 > label span,
+  form.normal section .row .cols-2-5 > label span,
+  form.normal section .row .cols-3 > label span,
+  form.normal section .row .cols-3-3 > label span,
+  form.normal section .row .cols-4 > label span,
+  form.normal section .row .cols-5 > label span,
+  form.normal section .row .cols-6 > label span,
+  form.normal section .row .cols-6-6 > label span,
+  form.normal section .row .cols-7 > label span,
+  form.normal section .row .cols-7-5 > label span,
+  form.normal section .row .cols-8 > label span,
+  form.normal section .row .cols-9 > label span,
+  form.normal section .row .cols-10 > label span {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 15px;
+    opacity: 0.85;
+  }
+  form.normal section .row .cols-1.grey-input .input input[type="text"],
+  form.normal section .row .cols-1-7th.grey-input .input input[type="text"],
+  form.normal section .row .cols-1-5.grey-input .input input[type="text"],
+  form.normal section .row .cols-1-6.grey-input .input input[type="text"],
+  form.normal section .row .cols-1-75.grey-input .input input[type="text"],
+  form.normal section .row .cols-2.grey-input .input input[type="text"],
+  form.normal section .row .cols-2-25.grey-input .input input[type="text"],
+  form.normal section .row .cols-2-5.grey-input .input input[type="text"],
+  form.normal section .row .cols-3.grey-input .input input[type="text"],
+  form.normal section .row .cols-3-3.grey-input .input input[type="text"],
+  form.normal section .row .cols-4.grey-input .input input[type="text"],
+  form.normal section .row .cols-5.grey-input .input input[type="text"],
+  form.normal section .row .cols-6.grey-input .input input[type="text"],
+  form.normal section .row .cols-6-6.grey-input .input input[type="text"],
+  form.normal section .row .cols-7.grey-input .input input[type="text"],
+  form.normal section .row .cols-7-5.grey-input .input input[type="text"],
+  form.normal section .row .cols-8.grey-input .input input[type="text"],
+  form.normal section .row .cols-9.grey-input .input input[type="text"],
+  form.normal section .row .cols-10.grey-input .input input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  form.normal section .row .cols-1.label-center .input,
+  form.normal section .row .cols-1-7th.label-center .input,
+  form.normal section .row .cols-1-5.label-center .input,
+  form.normal section .row .cols-1-6.label-center .input,
+  form.normal section .row .cols-1-75.label-center .input,
+  form.normal section .row .cols-2.label-center .input,
+  form.normal section .row .cols-2-25.label-center .input,
+  form.normal section .row .cols-2-5.label-center .input,
+  form.normal section .row .cols-3.label-center .input,
+  form.normal section .row .cols-3-3.label-center .input,
+  form.normal section .row .cols-4.label-center .input,
+  form.normal section .row .cols-5.label-center .input,
+  form.normal section .row .cols-6.label-center .input,
+  form.normal section .row .cols-6-6.label-center .input,
+  form.normal section .row .cols-7.label-center .input,
+  form.normal section .row .cols-7-5.label-center .input,
+  form.normal section .row .cols-8.label-center .input,
+  form.normal section .row .cols-9.label-center .input,
+  form.normal section .row .cols-10.label-center .input {
+    text-align: center;
+  }
+  form.normal section .row .cols-1.label-center .input .check,
+  form.normal section .row .cols-1-7th.label-center .input .check,
+  form.normal section .row .cols-1-5.label-center .input .check,
+  form.normal section .row .cols-1-6.label-center .input .check,
+  form.normal section .row .cols-1-75.label-center .input .check,
+  form.normal section .row .cols-2.label-center .input .check,
+  form.normal section .row .cols-2-25.label-center .input .check,
+  form.normal section .row .cols-2-5.label-center .input .check,
+  form.normal section .row .cols-3.label-center .input .check,
+  form.normal section .row .cols-3-3.label-center .input .check,
+  form.normal section .row .cols-4.label-center .input .check,
+  form.normal section .row .cols-5.label-center .input .check,
+  form.normal section .row .cols-6.label-center .input .check,
+  form.normal section .row .cols-6-6.label-center .input .check,
+  form.normal section .row .cols-7.label-center .input .check,
+  form.normal section .row .cols-7-5.label-center .input .check,
+  form.normal section .row .cols-8.label-center .input .check,
+  form.normal section .row .cols-9.label-center .input .check,
+  form.normal section .row .cols-10.label-center .input .check,
+  form.normal section .row .cols-1.label-center .input .radio,
+  form.normal section .row .cols-1-7th.label-center .input .radio,
+  form.normal section .row .cols-1-5.label-center .input .radio,
+  form.normal section .row .cols-1-6.label-center .input .radio,
+  form.normal section .row .cols-1-75.label-center .input .radio,
+  form.normal section .row .cols-2.label-center .input .radio,
+  form.normal section .row .cols-2-25.label-center .input .radio,
+  form.normal section .row .cols-2-5.label-center .input .radio,
+  form.normal section .row .cols-3.label-center .input .radio,
+  form.normal section .row .cols-3-3.label-center .input .radio,
+  form.normal section .row .cols-4.label-center .input .radio,
+  form.normal section .row .cols-5.label-center .input .radio,
+  form.normal section .row .cols-6.label-center .input .radio,
+  form.normal section .row .cols-6-6.label-center .input .radio,
+  form.normal section .row .cols-7.label-center .input .radio,
+  form.normal section .row .cols-7-5.label-center .input .radio,
+  form.normal section .row .cols-8.label-center .input .radio,
+  form.normal section .row .cols-9.label-center .input .radio,
+  form.normal section .row .cols-10.label-center .input .radio {
+    float: none;
+  }
+  form.normal section .row .cols-1.label-center .input .check label,
+  form.normal section .row .cols-1-7th.label-center .input .check label,
+  form.normal section .row .cols-1-5.label-center .input .check label,
+  form.normal section .row .cols-1-6.label-center .input .check label,
+  form.normal section .row .cols-1-75.label-center .input .check label,
+  form.normal section .row .cols-2.label-center .input .check label,
+  form.normal section .row .cols-2-25.label-center .input .check label,
+  form.normal section .row .cols-2-5.label-center .input .check label,
+  form.normal section .row .cols-3.label-center .input .check label,
+  form.normal section .row .cols-3-3.label-center .input .check label,
+  form.normal section .row .cols-4.label-center .input .check label,
+  form.normal section .row .cols-5.label-center .input .check label,
+  form.normal section .row .cols-6.label-center .input .check label,
+  form.normal section .row .cols-6-6.label-center .input .check label,
+  form.normal section .row .cols-7.label-center .input .check label,
+  form.normal section .row .cols-7-5.label-center .input .check label,
+  form.normal section .row .cols-8.label-center .input .check label,
+  form.normal section .row .cols-9.label-center .input .check label,
+  form.normal section .row .cols-10.label-center .input .check label,
+  form.normal section .row .cols-1.label-center .input .radio label,
+  form.normal section .row .cols-1-7th.label-center .input .radio label,
+  form.normal section .row .cols-1-5.label-center .input .radio label,
+  form.normal section .row .cols-1-6.label-center .input .radio label,
+  form.normal section .row .cols-1-75.label-center .input .radio label,
+  form.normal section .row .cols-2.label-center .input .radio label,
+  form.normal section .row .cols-2-25.label-center .input .radio label,
+  form.normal section .row .cols-2-5.label-center .input .radio label,
+  form.normal section .row .cols-3.label-center .input .radio label,
+  form.normal section .row .cols-3-3.label-center .input .radio label,
+  form.normal section .row .cols-4.label-center .input .radio label,
+  form.normal section .row .cols-5.label-center .input .radio label,
+  form.normal section .row .cols-6.label-center .input .radio label,
+  form.normal section .row .cols-6-6.label-center .input .radio label,
+  form.normal section .row .cols-7.label-center .input .radio label,
+  form.normal section .row .cols-7-5.label-center .input .radio label,
+  form.normal section .row .cols-8.label-center .input .radio label,
+  form.normal section .row .cols-9.label-center .input .radio label,
+  form.normal section .row .cols-10.label-center .input .radio label {
+    display: inline-block;
+    margin-right: 0;
+  }
+  form.normal section .row .cols-1.radio-center .input .radio,
+  form.normal section .row .cols-1-7th.radio-center .input .radio,
+  form.normal section .row .cols-1-5.radio-center .input .radio,
+  form.normal section .row .cols-1-6.radio-center .input .radio,
+  form.normal section .row .cols-1-75.radio-center .input .radio,
+  form.normal section .row .cols-2.radio-center .input .radio,
+  form.normal section .row .cols-2-25.radio-center .input .radio,
+  form.normal section .row .cols-2-5.radio-center .input .radio,
+  form.normal section .row .cols-3.radio-center .input .radio,
+  form.normal section .row .cols-3-3.radio-center .input .radio,
+  form.normal section .row .cols-4.radio-center .input .radio,
+  form.normal section .row .cols-5.radio-center .input .radio,
+  form.normal section .row .cols-6.radio-center .input .radio,
+  form.normal section .row .cols-6-6.radio-center .input .radio,
+  form.normal section .row .cols-7.radio-center .input .radio,
+  form.normal section .row .cols-7-5.radio-center .input .radio,
+  form.normal section .row .cols-8.radio-center .input .radio,
+  form.normal section .row .cols-9.radio-center .input .radio,
+  form.normal section .row .cols-10.radio-center .input .radio {
+    float: none;
+    display: inline-block;
+  }
+  form.normal section .row .cols-1 .input,
+  form.normal section .row .cols-1-7th .input,
+  form.normal section .row .cols-1-5 .input,
+  form.normal section .row .cols-1-6 .input,
+  form.normal section .row .cols-1-75 .input,
+  form.normal section .row .cols-2 .input,
+  form.normal section .row .cols-2-25 .input,
+  form.normal section .row .cols-2-5 .input,
+  form.normal section .row .cols-3 .input,
+  form.normal section .row .cols-3-3 .input,
+  form.normal section .row .cols-4 .input,
+  form.normal section .row .cols-5 .input,
+  form.normal section .row .cols-6 .input,
+  form.normal section .row .cols-6-6 .input,
+  form.normal section .row .cols-7 .input,
+  form.normal section .row .cols-7-5 .input,
+  form.normal section .row .cols-8 .input,
+  form.normal section .row .cols-9 .input,
+  form.normal section .row .cols-10 .input {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  form.normal section .row .cols-1 .input label,
+  form.normal section .row .cols-1-7th .input label,
+  form.normal section .row .cols-1-5 .input label,
+  form.normal section .row .cols-1-6 .input label,
+  form.normal section .row .cols-1-75 .input label,
+  form.normal section .row .cols-2 .input label,
+  form.normal section .row .cols-2-25 .input label,
+  form.normal section .row .cols-2-5 .input label,
+  form.normal section .row .cols-3 .input label,
+  form.normal section .row .cols-3-3 .input label,
+  form.normal section .row .cols-4 .input label,
+  form.normal section .row .cols-5 .input label,
+  form.normal section .row .cols-6 .input label,
+  form.normal section .row .cols-6-6 .input label,
+  form.normal section .row .cols-7 .input label,
+  form.normal section .row .cols-7-5 .input label,
+  form.normal section .row .cols-8 .input label,
+  form.normal section .row .cols-9 .input label,
+  form.normal section .row .cols-10 .input label {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  form.normal section .row .cols-1 .input .check,
+  form.normal section .row .cols-1-7th .input .check,
+  form.normal section .row .cols-1-5 .input .check,
+  form.normal section .row .cols-1-6 .input .check,
+  form.normal section .row .cols-1-75 .input .check,
+  form.normal section .row .cols-2 .input .check,
+  form.normal section .row .cols-2-25 .input .check,
+  form.normal section .row .cols-2-5 .input .check,
+  form.normal section .row .cols-3 .input .check,
+  form.normal section .row .cols-3-3 .input .check,
+  form.normal section .row .cols-4 .input .check,
+  form.normal section .row .cols-5 .input .check,
+  form.normal section .row .cols-6 .input .check,
+  form.normal section .row .cols-6-6 .input .check,
+  form.normal section .row .cols-7 .input .check,
+  form.normal section .row .cols-7-5 .input .check,
+  form.normal section .row .cols-8 .input .check,
+  form.normal section .row .cols-9 .input .check,
+  form.normal section .row .cols-10 .input .check,
+  form.normal section .row .cols-1 .input .radio,
+  form.normal section .row .cols-1-7th .input .radio,
+  form.normal section .row .cols-1-5 .input .radio,
+  form.normal section .row .cols-1-6 .input .radio,
+  form.normal section .row .cols-1-75 .input .radio,
+  form.normal section .row .cols-2 .input .radio,
+  form.normal section .row .cols-2-25 .input .radio,
+  form.normal section .row .cols-2-5 .input .radio,
+  form.normal section .row .cols-3 .input .radio,
+  form.normal section .row .cols-3-3 .input .radio,
+  form.normal section .row .cols-4 .input .radio,
+  form.normal section .row .cols-5 .input .radio,
+  form.normal section .row .cols-6 .input .radio,
+  form.normal section .row .cols-6-6 .input .radio,
+  form.normal section .row .cols-7 .input .radio,
+  form.normal section .row .cols-7-5 .input .radio,
+  form.normal section .row .cols-8 .input .radio,
+  form.normal section .row .cols-9 .input .radio,
+  form.normal section .row .cols-10 .input .radio {
+    position: relative;
+    display: block;
+    float: left;
+  }
+  form.normal section .row .cols-1 .input .check label,
+  form.normal section .row .cols-1-7th .input .check label,
+  form.normal section .row .cols-1-5 .input .check label,
+  form.normal section .row .cols-1-6 .input .check label,
+  form.normal section .row .cols-1-75 .input .check label,
+  form.normal section .row .cols-2 .input .check label,
+  form.normal section .row .cols-2-25 .input .check label,
+  form.normal section .row .cols-2-5 .input .check label,
+  form.normal section .row .cols-3 .input .check label,
+  form.normal section .row .cols-3-3 .input .check label,
+  form.normal section .row .cols-4 .input .check label,
+  form.normal section .row .cols-5 .input .check label,
+  form.normal section .row .cols-6 .input .check label,
+  form.normal section .row .cols-6-6 .input .check label,
+  form.normal section .row .cols-7 .input .check label,
+  form.normal section .row .cols-7-5 .input .check label,
+  form.normal section .row .cols-8 .input .check label,
+  form.normal section .row .cols-9 .input .check label,
+  form.normal section .row .cols-10 .input .check label,
+  form.normal section .row .cols-1 .input .radio label,
+  form.normal section .row .cols-1-7th .input .radio label,
+  form.normal section .row .cols-1-5 .input .radio label,
+  form.normal section .row .cols-1-6 .input .radio label,
+  form.normal section .row .cols-1-75 .input .radio label,
+  form.normal section .row .cols-2 .input .radio label,
+  form.normal section .row .cols-2-25 .input .radio label,
+  form.normal section .row .cols-2-5 .input .radio label,
+  form.normal section .row .cols-3 .input .radio label,
+  form.normal section .row .cols-3-3 .input .radio label,
+  form.normal section .row .cols-4 .input .radio label,
+  form.normal section .row .cols-5 .input .radio label,
+  form.normal section .row .cols-6 .input .radio label,
+  form.normal section .row .cols-6-6 .input .radio label,
+  form.normal section .row .cols-7 .input .radio label,
+  form.normal section .row .cols-7-5 .input .radio label,
+  form.normal section .row .cols-8 .input .radio label,
+  form.normal section .row .cols-9 .input .radio label,
+  form.normal section .row .cols-10 .input .radio label {
+    position: relative;
+    margin-right: 15px;
+    min-height: 19px;
+    cursor: pointer;
+    padding-left: 18px;
+    display: block;
+  }
+  form.normal section .row .cols-1 .input .check label:before,
+  form.normal section .row .cols-1-7th .input .check label:before,
+  form.normal section .row .cols-1-5 .input .check label:before,
+  form.normal section .row .cols-1-6 .input .check label:before,
+  form.normal section .row .cols-1-75 .input .check label:before,
+  form.normal section .row .cols-2 .input .check label:before,
+  form.normal section .row .cols-2-25 .input .check label:before,
+  form.normal section .row .cols-2-5 .input .check label:before,
+  form.normal section .row .cols-3 .input .check label:before,
+  form.normal section .row .cols-3-3 .input .check label:before,
+  form.normal section .row .cols-4 .input .check label:before,
+  form.normal section .row .cols-5 .input .check label:before,
+  form.normal section .row .cols-6 .input .check label:before,
+  form.normal section .row .cols-6-6 .input .check label:before,
+  form.normal section .row .cols-7 .input .check label:before,
+  form.normal section .row .cols-7-5 .input .check label:before,
+  form.normal section .row .cols-8 .input .check label:before,
+  form.normal section .row .cols-9 .input .check label:before,
+  form.normal section .row .cols-10 .input .check label:before,
+  form.normal section .row .cols-1 .input .radio label:before,
+  form.normal section .row .cols-1-7th .input .radio label:before,
+  form.normal section .row .cols-1-5 .input .radio label:before,
+  form.normal section .row .cols-1-6 .input .radio label:before,
+  form.normal section .row .cols-1-75 .input .radio label:before,
+  form.normal section .row .cols-2 .input .radio label:before,
+  form.normal section .row .cols-2-25 .input .radio label:before,
+  form.normal section .row .cols-2-5 .input .radio label:before,
+  form.normal section .row .cols-3 .input .radio label:before,
+  form.normal section .row .cols-3-3 .input .radio label:before,
+  form.normal section .row .cols-4 .input .radio label:before,
+  form.normal section .row .cols-5 .input .radio label:before,
+  form.normal section .row .cols-6 .input .radio label:before,
+  form.normal section .row .cols-6-6 .input .radio label:before,
+  form.normal section .row .cols-7 .input .radio label:before,
+  form.normal section .row .cols-7-5 .input .radio label:before,
+  form.normal section .row .cols-8 .input .radio label:before,
+  form.normal section .row .cols-9 .input .radio label:before,
+  form.normal section .row .cols-10 .input .radio label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #777374;
+    top: 3px;
+  }
+  form.normal section .row .cols-1 .input .check label:after,
+  form.normal section .row .cols-1-7th .input .check label:after,
+  form.normal section .row .cols-1-5 .input .check label:after,
+  form.normal section .row .cols-1-6 .input .check label:after,
+  form.normal section .row .cols-1-75 .input .check label:after,
+  form.normal section .row .cols-2 .input .check label:after,
+  form.normal section .row .cols-2-25 .input .check label:after,
+  form.normal section .row .cols-2-5 .input .check label:after,
+  form.normal section .row .cols-3 .input .check label:after,
+  form.normal section .row .cols-3-3 .input .check label:after,
+  form.normal section .row .cols-4 .input .check label:after,
+  form.normal section .row .cols-5 .input .check label:after,
+  form.normal section .row .cols-6 .input .check label:after,
+  form.normal section .row .cols-6-6 .input .check label:after,
+  form.normal section .row .cols-7 .input .check label:after,
+  form.normal section .row .cols-7-5 .input .check label:after,
+  form.normal section .row .cols-8 .input .check label:after,
+  form.normal section .row .cols-9 .input .check label:after,
+  form.normal section .row .cols-10 .input .check label:after,
+  form.normal section .row .cols-1 .input .radio label:after,
+  form.normal section .row .cols-1-7th .input .radio label:after,
+  form.normal section .row .cols-1-5 .input .radio label:after,
+  form.normal section .row .cols-1-6 .input .radio label:after,
+  form.normal section .row .cols-1-75 .input .radio label:after,
+  form.normal section .row .cols-2 .input .radio label:after,
+  form.normal section .row .cols-2-25 .input .radio label:after,
+  form.normal section .row .cols-2-5 .input .radio label:after,
+  form.normal section .row .cols-3 .input .radio label:after,
+  form.normal section .row .cols-3-3 .input .radio label:after,
+  form.normal section .row .cols-4 .input .radio label:after,
+  form.normal section .row .cols-5 .input .radio label:after,
+  form.normal section .row .cols-6 .input .radio label:after,
+  form.normal section .row .cols-6-6 .input .radio label:after,
+  form.normal section .row .cols-7 .input .radio label:after,
+  form.normal section .row .cols-7-5 .input .radio label:after,
+  form.normal section .row .cols-8 .input .radio label:after,
+  form.normal section .row .cols-9 .input .radio label:after,
+  form.normal section .row .cols-10 .input .radio label:after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    width: 7px;
+    height: 3px;
+    border-bottom: 2px solid #444;
+    border-left: 2px solid #444;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: none;
+  }
+  form.normal section .row .cols-1 .input .check label:hover:before,
+  form.normal section .row .cols-1-7th .input .check label:hover:before,
+  form.normal section .row .cols-1-5 .input .check label:hover:before,
+  form.normal section .row .cols-1-6 .input .check label:hover:before,
+  form.normal section .row .cols-1-75 .input .check label:hover:before,
+  form.normal section .row .cols-2 .input .check label:hover:before,
+  form.normal section .row .cols-2-25 .input .check label:hover:before,
+  form.normal section .row .cols-2-5 .input .check label:hover:before,
+  form.normal section .row .cols-3 .input .check label:hover:before,
+  form.normal section .row .cols-3-3 .input .check label:hover:before,
+  form.normal section .row .cols-4 .input .check label:hover:before,
+  form.normal section .row .cols-5 .input .check label:hover:before,
+  form.normal section .row .cols-6 .input .check label:hover:before,
+  form.normal section .row .cols-6-6 .input .check label:hover:before,
+  form.normal section .row .cols-7 .input .check label:hover:before,
+  form.normal section .row .cols-7-5 .input .check label:hover:before,
+  form.normal section .row .cols-8 .input .check label:hover:before,
+  form.normal section .row .cols-9 .input .check label:hover:before,
+  form.normal section .row .cols-10 .input .check label:hover:before,
+  form.normal section .row .cols-1 .input .radio label:hover:before,
+  form.normal section .row .cols-1-7th .input .radio label:hover:before,
+  form.normal section .row .cols-1-5 .input .radio label:hover:before,
+  form.normal section .row .cols-1-6 .input .radio label:hover:before,
+  form.normal section .row .cols-1-75 .input .radio label:hover:before,
+  form.normal section .row .cols-2 .input .radio label:hover:before,
+  form.normal section .row .cols-2-25 .input .radio label:hover:before,
+  form.normal section .row .cols-2-5 .input .radio label:hover:before,
+  form.normal section .row .cols-3 .input .radio label:hover:before,
+  form.normal section .row .cols-3-3 .input .radio label:hover:before,
+  form.normal section .row .cols-4 .input .radio label:hover:before,
+  form.normal section .row .cols-5 .input .radio label:hover:before,
+  form.normal section .row .cols-6 .input .radio label:hover:before,
+  form.normal section .row .cols-6-6 .input .radio label:hover:before,
+  form.normal section .row .cols-7 .input .radio label:hover:before,
+  form.normal section .row .cols-7-5 .input .radio label:hover:before,
+  form.normal section .row .cols-8 .input .radio label:hover:before,
+  form.normal section .row .cols-9 .input .radio label:hover:before,
+  form.normal section .row .cols-10 .input .radio label:hover:before {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  form.normal section .row .cols-1 .input .check input[type="checkbox"],
+  form.normal section .row .cols-1-7th .input .check input[type="checkbox"],
+  form.normal section .row .cols-1-5 .input .check input[type="checkbox"],
+  form.normal section .row .cols-1-6 .input .check input[type="checkbox"],
+  form.normal section .row .cols-1-75 .input .check input[type="checkbox"],
+  form.normal section .row .cols-2 .input .check input[type="checkbox"],
+  form.normal section .row .cols-2-25 .input .check input[type="checkbox"],
+  form.normal section .row .cols-2-5 .input .check input[type="checkbox"],
+  form.normal section .row .cols-3 .input .check input[type="checkbox"],
+  form.normal section .row .cols-3-3 .input .check input[type="checkbox"],
+  form.normal section .row .cols-4 .input .check input[type="checkbox"],
+  form.normal section .row .cols-5 .input .check input[type="checkbox"],
+  form.normal section .row .cols-6 .input .check input[type="checkbox"],
+  form.normal section .row .cols-6-6 .input .check input[type="checkbox"],
+  form.normal section .row .cols-7 .input .check input[type="checkbox"],
+  form.normal section .row .cols-7-5 .input .check input[type="checkbox"],
+  form.normal section .row .cols-8 .input .check input[type="checkbox"],
+  form.normal section .row .cols-9 .input .check input[type="checkbox"],
+  form.normal section .row .cols-10 .input .check input[type="checkbox"],
+  form.normal section .row .cols-1 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-1-7th .input .radio input[type="checkbox"],
+  form.normal section .row .cols-1-5 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-1-6 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-1-75 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-2 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-2-25 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-2-5 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-3 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-3-3 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-4 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-5 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-6 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-6-6 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-7 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-7-5 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-8 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-9 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-10 .input .radio input[type="checkbox"],
+  form.normal section .row .cols-1 .input .check input[type="radio"],
+  form.normal section .row .cols-1-7th .input .check input[type="radio"],
+  form.normal section .row .cols-1-5 .input .check input[type="radio"],
+  form.normal section .row .cols-1-6 .input .check input[type="radio"],
+  form.normal section .row .cols-1-75 .input .check input[type="radio"],
+  form.normal section .row .cols-2 .input .check input[type="radio"],
+  form.normal section .row .cols-2-25 .input .check input[type="radio"],
+  form.normal section .row .cols-2-5 .input .check input[type="radio"],
+  form.normal section .row .cols-3 .input .check input[type="radio"],
+  form.normal section .row .cols-3-3 .input .check input[type="radio"],
+  form.normal section .row .cols-4 .input .check input[type="radio"],
+  form.normal section .row .cols-5 .input .check input[type="radio"],
+  form.normal section .row .cols-6 .input .check input[type="radio"],
+  form.normal section .row .cols-6-6 .input .check input[type="radio"],
+  form.normal section .row .cols-7 .input .check input[type="radio"],
+  form.normal section .row .cols-7-5 .input .check input[type="radio"],
+  form.normal section .row .cols-8 .input .check input[type="radio"],
+  form.normal section .row .cols-9 .input .check input[type="radio"],
+  form.normal section .row .cols-10 .input .check input[type="radio"],
+  form.normal section .row .cols-1 .input .radio input[type="radio"],
+  form.normal section .row .cols-1-7th .input .radio input[type="radio"],
+  form.normal section .row .cols-1-5 .input .radio input[type="radio"],
+  form.normal section .row .cols-1-6 .input .radio input[type="radio"],
+  form.normal section .row .cols-1-75 .input .radio input[type="radio"],
+  form.normal section .row .cols-2 .input .radio input[type="radio"],
+  form.normal section .row .cols-2-25 .input .radio input[type="radio"],
+  form.normal section .row .cols-2-5 .input .radio input[type="radio"],
+  form.normal section .row .cols-3 .input .radio input[type="radio"],
+  form.normal section .row .cols-3-3 .input .radio input[type="radio"],
+  form.normal section .row .cols-4 .input .radio input[type="radio"],
+  form.normal section .row .cols-5 .input .radio input[type="radio"],
+  form.normal section .row .cols-6 .input .radio input[type="radio"],
+  form.normal section .row .cols-6-6 .input .radio input[type="radio"],
+  form.normal section .row .cols-7 .input .radio input[type="radio"],
+  form.normal section .row .cols-7-5 .input .radio input[type="radio"],
+  form.normal section .row .cols-8 .input .radio input[type="radio"],
+  form.normal section .row .cols-9 .input .radio input[type="radio"],
+  form.normal section .row .cols-10 .input .radio input[type="radio"] {
+    display: none;
+  }
+  form.normal
+    section
+    .row
+    .cols-1
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-7th
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-5
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-6
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-75
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2-25
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2-5
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-3
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-3-3
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-4
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-5
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-6
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-6-6
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-7
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-7-5
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-8
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-9
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-10
+    .input
+    .check
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-7th
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-5
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-6
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-75
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2-25
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2-5
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-3
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-3-3
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-4
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-5
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-6
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-6-6
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-7
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-7-5
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-8
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-9
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-10
+    .input
+    .radio
+    input[type="checkbox"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-7th
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-5
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-6
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-75
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2-25
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2-5
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-3
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-3-3
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-4
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-5
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-6
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-6-6
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-7
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-7-5
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-8
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-9
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-10
+    .input
+    .check
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-7th
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-5
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-6
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-1-75
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2-25
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-2-5
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-3
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-3-3
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-4
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-5
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-6
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-6-6
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-7
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-7-5
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-8
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-9
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after,
+  form.normal
+    section
+    .row
+    .cols-10
+    .input
+    .radio
+    input[type="radio"]:checked
+    ~ label:after {
+    display: block;
+  }
+  form.normal section .row .cols-1 .input input[type="text"],
+  form.normal section .row .cols-1-7th .input input[type="text"],
+  form.normal section .row .cols-1-5 .input input[type="text"],
+  form.normal section .row .cols-1-6 .input input[type="text"],
+  form.normal section .row .cols-1-75 .input input[type="text"],
+  form.normal section .row .cols-2 .input input[type="text"],
+  form.normal section .row .cols-2-25 .input input[type="text"],
+  form.normal section .row .cols-2-5 .input input[type="text"],
+  form.normal section .row .cols-3 .input input[type="text"],
+  form.normal section .row .cols-3-3 .input input[type="text"],
+  form.normal section .row .cols-4 .input input[type="text"],
+  form.normal section .row .cols-5 .input input[type="text"],
+  form.normal section .row .cols-6 .input input[type="text"],
+  form.normal section .row .cols-6-6 .input input[type="text"],
+  form.normal section .row .cols-7 .input input[type="text"],
+  form.normal section .row .cols-7-5 .input input[type="text"],
+  form.normal section .row .cols-8 .input input[type="text"],
+  form.normal section .row .cols-9 .input input[type="text"],
+  form.normal section .row .cols-10 .input input[type="text"] {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    line-height: 19px;
+    font-size: 12px;
+    margin: 0;
+    color: inherit;
+    padding: 2px 0;
+    outline: 0;
+    transition: background 0.3s;
+  }
+  form.normal section .row .cols-1 .input input[type="text"]:hover,
+  form.normal section .row .cols-1-7th .input input[type="text"]:hover,
+  form.normal section .row .cols-1-5 .input input[type="text"]:hover,
+  form.normal section .row .cols-1-6 .input input[type="text"]:hover,
+  form.normal section .row .cols-1-75 .input input[type="text"]:hover,
+  form.normal section .row .cols-2 .input input[type="text"]:hover,
+  form.normal section .row .cols-2-25 .input input[type="text"]:hover,
+  form.normal section .row .cols-2-5 .input input[type="text"]:hover,
+  form.normal section .row .cols-3 .input input[type="text"]:hover,
+  form.normal section .row .cols-3-3 .input input[type="text"]:hover,
+  form.normal section .row .cols-4 .input input[type="text"]:hover,
+  form.normal section .row .cols-5 .input input[type="text"]:hover,
+  form.normal section .row .cols-6 .input input[type="text"]:hover,
+  form.normal section .row .cols-6-6 .input input[type="text"]:hover,
+  form.normal section .row .cols-7 .input input[type="text"]:hover,
+  form.normal section .row .cols-7-5 .input input[type="text"]:hover,
+  form.normal section .row .cols-8 .input input[type="text"]:hover,
+  form.normal section .row .cols-9 .input input[type="text"]:hover,
+  form.normal section .row .cols-10 .input input[type="text"]:hover,
+  form.normal section .row .cols-1 .input input[type="text"]:focus,
+  form.normal section .row .cols-1-7th .input input[type="text"]:focus,
+  form.normal section .row .cols-1-5 .input input[type="text"]:focus,
+  form.normal section .row .cols-1-6 .input input[type="text"]:focus,
+  form.normal section .row .cols-1-75 .input input[type="text"]:focus,
+  form.normal section .row .cols-2 .input input[type="text"]:focus,
+  form.normal section .row .cols-2-25 .input input[type="text"]:focus,
+  form.normal section .row .cols-2-5 .input input[type="text"]:focus,
+  form.normal section .row .cols-3 .input input[type="text"]:focus,
+  form.normal section .row .cols-3-3 .input input[type="text"]:focus,
+  form.normal section .row .cols-4 .input input[type="text"]:focus,
+  form.normal section .row .cols-5 .input input[type="text"]:focus,
+  form.normal section .row .cols-6 .input input[type="text"]:focus,
+  form.normal section .row .cols-6-6 .input input[type="text"]:focus,
+  form.normal section .row .cols-7 .input input[type="text"]:focus,
+  form.normal section .row .cols-7-5 .input input[type="text"]:focus,
+  form.normal section .row .cols-8 .input input[type="text"]:focus,
+  form.normal section .row .cols-9 .input input[type="text"]:focus,
+  form.normal section .row .cols-10 .input input[type="text"]:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  form.normal section .row .cols-1 .input select,
+  form.normal section .row .cols-1-7th .input select,
+  form.normal section .row .cols-1-5 .input select,
+  form.normal section .row .cols-1-6 .input select,
+  form.normal section .row .cols-1-75 .input select,
+  form.normal section .row .cols-2 .input select,
+  form.normal section .row .cols-2-25 .input select,
+  form.normal section .row .cols-2-5 .input select,
+  form.normal section .row .cols-3 .input select,
+  form.normal section .row .cols-3-3 .input select,
+  form.normal section .row .cols-4 .input select,
+  form.normal section .row .cols-5 .input select,
+  form.normal section .row .cols-6 .input select,
+  form.normal section .row .cols-6-6 .input select,
+  form.normal section .row .cols-7 .input select,
+  form.normal section .row .cols-7-5 .input select,
+  form.normal section .row .cols-8 .input select,
+  form.normal section .row .cols-9 .input select,
+  form.normal section .row .cols-10 .input select {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #777374;
+    outline: 0;
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+  form.normal section .row .cols-1.even-check.half .input .check,
+  form.normal section .row .cols-1-7th.even-check.half .input .check,
+  form.normal section .row .cols-1-5.even-check.half .input .check,
+  form.normal section .row .cols-1-6.even-check.half .input .check,
+  form.normal section .row .cols-1-75.even-check.half .input .check,
+  form.normal section .row .cols-2.even-check.half .input .check,
+  form.normal section .row .cols-2-25.even-check.half .input .check,
+  form.normal section .row .cols-2-5.even-check.half .input .check,
+  form.normal section .row .cols-3.even-check.half .input .check,
+  form.normal section .row .cols-3-3.even-check.half .input .check,
+  form.normal section .row .cols-4.even-check.half .input .check,
+  form.normal section .row .cols-5.even-check.half .input .check,
+  form.normal section .row .cols-6.even-check.half .input .check,
+  form.normal section .row .cols-6-6.even-check.half .input .check,
+  form.normal section .row .cols-7.even-check.half .input .check,
+  form.normal section .row .cols-7-5.even-check.half .input .check,
+  form.normal section .row .cols-8.even-check.half .input .check,
+  form.normal section .row .cols-9.even-check.half .input .check,
+  form.normal section .row .cols-10.even-check.half .input .check,
+  form.normal section .row .cols-1.even-check.half .input .radio,
+  form.normal section .row .cols-1-7th.even-check.half .input .radio,
+  form.normal section .row .cols-1-5.even-check.half .input .radio,
+  form.normal section .row .cols-1-6.even-check.half .input .radio,
+  form.normal section .row .cols-1-75.even-check.half .input .radio,
+  form.normal section .row .cols-2.even-check.half .input .radio,
+  form.normal section .row .cols-2-25.even-check.half .input .radio,
+  form.normal section .row .cols-2-5.even-check.half .input .radio,
+  form.normal section .row .cols-3.even-check.half .input .radio,
+  form.normal section .row .cols-3-3.even-check.half .input .radio,
+  form.normal section .row .cols-4.even-check.half .input .radio,
+  form.normal section .row .cols-5.even-check.half .input .radio,
+  form.normal section .row .cols-6.even-check.half .input .radio,
+  form.normal section .row .cols-6-6.even-check.half .input .radio,
+  form.normal section .row .cols-7.even-check.half .input .radio,
+  form.normal section .row .cols-7-5.even-check.half .input .radio,
+  form.normal section .row .cols-8.even-check.half .input .radio,
+  form.normal section .row .cols-9.even-check.half .input .radio,
+  form.normal section .row .cols-10.even-check.half .input .radio {
+    width: 50%;
+  }
+  form.normal section .row .cols-1.even-check.third .input .check,
+  form.normal section .row .cols-1-7th.even-check.third .input .check,
+  form.normal section .row .cols-1-5.even-check.third .input .check,
+  form.normal section .row .cols-1-6.even-check.third .input .check,
+  form.normal section .row .cols-1-75.even-check.third .input .check,
+  form.normal section .row .cols-2.even-check.third .input .check,
+  form.normal section .row .cols-2-25.even-check.third .input .check,
+  form.normal section .row .cols-2-5.even-check.third .input .check,
+  form.normal section .row .cols-3.even-check.third .input .check,
+  form.normal section .row .cols-3-3.even-check.third .input .check,
+  form.normal section .row .cols-4.even-check.third .input .check,
+  form.normal section .row .cols-5.even-check.third .input .check,
+  form.normal section .row .cols-6.even-check.third .input .check,
+  form.normal section .row .cols-6-6.even-check.third .input .check,
+  form.normal section .row .cols-7.even-check.third .input .check,
+  form.normal section .row .cols-7-5.even-check.third .input .check,
+  form.normal section .row .cols-8.even-check.third .input .check,
+  form.normal section .row .cols-9.even-check.third .input .check,
+  form.normal section .row .cols-10.even-check.third .input .check,
+  form.normal section .row .cols-1.even-check.third .input .radio,
+  form.normal section .row .cols-1-7th.even-check.third .input .radio,
+  form.normal section .row .cols-1-5.even-check.third .input .radio,
+  form.normal section .row .cols-1-6.even-check.third .input .radio,
+  form.normal section .row .cols-1-75.even-check.third .input .radio,
+  form.normal section .row .cols-2.even-check.third .input .radio,
+  form.normal section .row .cols-2-25.even-check.third .input .radio,
+  form.normal section .row .cols-2-5.even-check.third .input .radio,
+  form.normal section .row .cols-3.even-check.third .input .radio,
+  form.normal section .row .cols-3-3.even-check.third .input .radio,
+  form.normal section .row .cols-4.even-check.third .input .radio,
+  form.normal section .row .cols-5.even-check.third .input .radio,
+  form.normal section .row .cols-6.even-check.third .input .radio,
+  form.normal section .row .cols-6-6.even-check.third .input .radio,
+  form.normal section .row .cols-7.even-check.third .input .radio,
+  form.normal section .row .cols-7-5.even-check.third .input .radio,
+  form.normal section .row .cols-8.even-check.third .input .radio,
+  form.normal section .row .cols-9.even-check.third .input .radio,
+  form.normal section .row .cols-10.even-check.third .input .radio {
+    width: 33.33%;
+  }
+  form.normal section .row .cols-1.even-check.quarter .input .check,
+  form.normal section .row .cols-1-7th.even-check.quarter .input .check,
+  form.normal section .row .cols-1-5.even-check.quarter .input .check,
+  form.normal section .row .cols-1-6.even-check.quarter .input .check,
+  form.normal section .row .cols-1-75.even-check.quarter .input .check,
+  form.normal section .row .cols-2.even-check.quarter .input .check,
+  form.normal section .row .cols-2-25.even-check.quarter .input .check,
+  form.normal section .row .cols-2-5.even-check.quarter .input .check,
+  form.normal section .row .cols-3.even-check.quarter .input .check,
+  form.normal section .row .cols-3-3.even-check.quarter .input .check,
+  form.normal section .row .cols-4.even-check.quarter .input .check,
+  form.normal section .row .cols-5.even-check.quarter .input .check,
+  form.normal section .row .cols-6.even-check.quarter .input .check,
+  form.normal section .row .cols-6-6.even-check.quarter .input .check,
+  form.normal section .row .cols-7.even-check.quarter .input .check,
+  form.normal section .row .cols-7-5.even-check.quarter .input .check,
+  form.normal section .row .cols-8.even-check.quarter .input .check,
+  form.normal section .row .cols-9.even-check.quarter .input .check,
+  form.normal section .row .cols-10.even-check.quarter .input .check,
+  form.normal section .row .cols-1.even-check.quarter .input .radio,
+  form.normal section .row .cols-1-7th.even-check.quarter .input .radio,
+  form.normal section .row .cols-1-5.even-check.quarter .input .radio,
+  form.normal section .row .cols-1-6.even-check.quarter .input .radio,
+  form.normal section .row .cols-1-75.even-check.quarter .input .radio,
+  form.normal section .row .cols-2.even-check.quarter .input .radio,
+  form.normal section .row .cols-2-25.even-check.quarter .input .radio,
+  form.normal section .row .cols-2-5.even-check.quarter .input .radio,
+  form.normal section .row .cols-3.even-check.quarter .input .radio,
+  form.normal section .row .cols-3-3.even-check.quarter .input .radio,
+  form.normal section .row .cols-4.even-check.quarter .input .radio,
+  form.normal section .row .cols-5.even-check.quarter .input .radio,
+  form.normal section .row .cols-6.even-check.quarter .input .radio,
+  form.normal section .row .cols-6-6.even-check.quarter .input .radio,
+  form.normal section .row .cols-7.even-check.quarter .input .radio,
+  form.normal section .row .cols-7-5.even-check.quarter .input .radio,
+  form.normal section .row .cols-8.even-check.quarter .input .radio,
+  form.normal section .row .cols-9.even-check.quarter .input .radio,
+  form.normal section .row .cols-10.even-check.quarter .input .radio {
+    width: 25%;
+  }
+  form.normal section .row .cols-1 {
+    width: 90px;
+  }
+  form.normal section .row .cols-1-7th {
+    width: 133px;
+  }
+  form.normal section .row .cols-1-7th:last-child {
+    width: 132px;
+  }
+  form.normal section .row .cols-1-5 {
+    width: 140px;
+  }
+  form.normal section .row .cols-1-6 {
+    width: 156px;
+  }
+  form.normal section .row .cols-1-75 {
+    width: 165px;
+  }
+  form.normal section .row .cols-2 {
+    width: 190px;
+  }
+  form.normal section .row .cols-2-25 {
+    width: 215px;
+  }
+  form.normal section .row .cols-2-5 {
+    width: 240px;
+  }
+  form.normal section .row .cols-3 {
+    width: 290px;
+  }
+  form.normal section .row .cols-3-3 {
+    width: 323px;
+  }
+  form.normal section .row .cols-4 {
+    width: 390px;
+  }
+  form.normal section .row .cols-5 {
+    width: 490px;
+  }
+  form.normal section .row .cols-6 {
+    width: 590px;
+  }
+  form.normal section .row .cols-6-6 {
+    width: 656px;
+  }
+  form.normal section .row .cols-7 {
+    width: 690px;
+  }
+  form.normal section .row .cols-7-5 {
+    width: 740px;
+  }
+  form.normal section .row .cols-8 {
+    width: 790px;
+  }
+  form.normal section .row .cols-9 {
+    width: 890px;
+  }
+  form.normal section .row .cols-10 {
+    width: 990px;
+  }
+  form.direct-debit.uk .slip .white .slip-bottom p.dark-blue {
+    background-color: #28327d;
+  }
+  form.direct-debit.uk .light-blue {
+    background-color: #f4f8fd;
+  }
+  form.direct-debit {
+    position: relative;
+    display: block;
+    width: 1000px;
+    margin: auto;
+    padding: 0 25px 5px 25px;
+    border: 35px solid transparent;
+    counter-reset: debit;
+  }
+  form.direct-debit h1 {
+    font-size: 19px;
+    color: #28327d;
+    letter-spacing: -1px;
+    font-weight: 900;
+    margin: 0 0 5px 0;
+  }
+  form.direct-debit h2 {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 25px;
+    width: 620px;
+    margin: 5px 0 60px 0;
+    padding: 0 25px;
+  }
+  form.direct-debit h3 {
+    position: relative;
+    display: block;
+    clear: both;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 0 0 0;
+  }
+  form.direct-debit p {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+  }
+  form.direct-debit .float-right {
+    float: right;
+    margin-right: 40px;
+  }
+  form.direct-debit .form-code {
+    position: absolute;
+    right: 100%;
+    top: 30px;
+    white-space: nowrap;
+    font-size: 12px;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  form.direct-debit .text-center {
+    text-align: center;
+  }
+  form.direct-debit .header img {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    height: 70px;
+  }
+  form.direct-debit .light-blue {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  form.direct-debit .main-form {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 10px 25px 0 25px;
+  }
+  form.direct-debit .main-form img {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    width: 150px;
+  }
+  form.direct-debit .left {
+    position: relative;
+    display: block;
+    float: left;
+    width: 500px;
+  }
+  form.direct-debit .left section {
+    position: relative;
+    display: block;
+    margin: 0 0 15px 0;
+    padding-left: 20px;
+  }
+  form.direct-debit .left section:before {
+    counter-increment: debit;
+    content: counter(debit) ".";
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    top: 0;
+  }
+  form.direct-debit .left section.section-2 input[type="text"] {
+    border: 1px solid #000;
+    border-right: 0;
+    padding: 9px 5px 9px 4px;
+    width: 50px;
+  }
+  form.direct-debit .left section.section-2 input[type="text"]:last-child {
+    border-right: 1px solid #000;
+    padding: 9px 4px;
+  }
+  form.direct-debit .right {
+    position: relative;
+    display: block;
+    float: left;
+    width: 400px;
+    margin-left: 35px;
+  }
+  form.direct-debit .right .section-1 {
+    margin-bottom: 80px;
+  }
+  form.direct-debit .right .section-1 input[type="text"] {
+    width: 20px;
+    margin-right: 4px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  form.direct-debit .signature {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    height: 70px;
+  }
+  form.direct-debit .signature img {
+    position: relative;
+    display: block;
+    left: 0;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    top: 0;
+  }
+  form.direct-debit .input {
+    overflow: hidden;
+  }
+  form.direct-debit .input input[type="text"],
+  form.direct-debit .input textarea {
+    line-height: 20px;
+    margin: 3px 0;
+    float: left;
+    border: 0;
+    padding: 10px 5px;
+    width: 100%;
+    width: calc(100% - 10px);
+    outline: 0;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  form.direct-debit .input input[type="text"].half,
+  form.direct-debit .input textarea.half {
+    width: calc(40% - 10px);
+  }
+  form.direct-debit .input textarea {
+    resize: none;
+    height: 80px;
+  }
+  form.direct-debit .input span {
+    display: block;
+    float: left;
+    width: 20%;
+    line-height: 20px;
+    padding-top: 25px;
+    text-align: center;
+  }
+  form.direct-debit .slip {
+    position: relative;
+    display: block;
+    border-top: 2px dashed #000;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+  }
+  form.direct-debit .slip .scissors {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    width: 30px;
+    height: auto;
+  }
+  form.direct-debit .slip .white {
+    background-color: #fff;
+    position: relative;
+    display: block;
+    margin: 0 25px;
+    padding: 5px 15px;
+    padding-bottom: 50px;
+  }
+  form.direct-debit .slip .white ul {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 5px 0;
+    padding: 0;
+    list-style-position: inside;
+  }
+  form.direct-debit .slip .white ul li {
+    margin-bottom: 5px;
+  }
+  form.direct-debit .slip .white .slip-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+  }
+  form.direct-debit .slip .white .slip-bottom p {
+    display: block;
+    float: left;
+    line-height: 20px;
+    padding: 10px 20px;
+  }
+  form.direct-debit .slip .white .slip-bottom p.dark-blue {
+    color: #fff;
+  }
+  form.direct-debit .slip .white .slip-bottom img {
+    position: absolute;
+    right: 10px;
+    height: 45px;
+    top: -5px;
+  }
+  form.direct-debit .footer {
+    position: relative;
+    display: block;
+    padding: 25px 25px 10px 25px;
+  }
+  form.direct-debit .footer p {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  form.direct-debit .footer img {
+    position: absolute;
+    right: 35px;
+    bottom: 15px;
+  }
+  form.sepa {
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    font-size: 15px;
+    padding: 20px 100px 0 100px;
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 1000px;
+  }
+  form.sepa .form-code {
+    position: absolute;
+    bottom: 150px;
+    right: 75px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webit-transform-origin: left;
+    transform-origin: left;
+    width: 0;
+    white-space: nowrap;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  form.sepa h1 {
+    color: #28327d;
+    font-size: 22px;
+    margin: 0 0 5px 0;
+  }
+  form.sepa p {
+    line-height: 150%;
+    margin: 0;
+  }
+  form.sepa .direct-debit {
+    display: block;
+    margin: 0 0 40px 0;
+    width: 260px;
+  }
+  form.sepa .row {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 0 20px;
+    position: relative;
+  }
+  form.sepa .box {
+    padding: 20px;
+  }
+  form.sepa .box.blue {
+    background-color: #f4f8fd;
+    padding: 28px 18px;
+  }
+  form.sepa .box.grey {
+    background-color: #dadada;
+    font-size: 17px;
+  }
+  form.sepa .bold {
+    font-weight: 700;
+  }
+  form.sepa .large {
+    font-size: 16px;
+  }
+  form.sepa .underline {
+    text-decoration: underline;
+  }
+  form.sepa .no-padding {
+    padding: 0;
+  }
+  form.sepa .input {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+    overflow: hidden;
+    position: relative;
+  }
+  form.sepa .input:first-child {
+    margin-top: 0;
+  }
+  form.sepa .input:last-child {
+    margin-bottom: 0;
+  }
+  form.sepa .half {
+    display: block;
+    float: left;
+    margin: 0;
+    width: 49%;
+  }
+  form.sepa .half:nth-child(2n) {
+    margin-left: 2%;
+  }
+  form.sepa input[type="text"] {
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    outline: 0;
+    padding: 0 5px;
+  }
+  form.sepa input[type="radio"] {
+    display: none;
+  }
+  form.sepa input[type="radio"] + label {
+    font-weight: 500 !important;
+    margin: 0 10px;
+  }
+  form.sepa input[type="radio"] + label:after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 25px;
+    margin: 0 0 0 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 25px;
+  }
+  form.sepa input[type="radio"]:checked + label:before {
+    content: "";
+    border-bottom: 2px solid #444;
+    border-left: 2px solid #444;
+    display: block;
+    height: 4px;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 10px;
+    z-index: 5;
+  }
+  form.sepa .radio {
+    display: inline;
+    position: relative;
+  }
+  form.sepa .names {
+    margin-bottom: 20px;
+  }
+  form.sepa .address {
+    overflow: hidden;
+  }
+  form.sepa .address .label {
+    display: block;
+    float: left;
+    width: 230px;
+  }
+  form.sepa .address .fields {
+    float: right;
+    width: 730px;
+  }
+  form.sepa .address .fields label {
+    font-weight: 500;
+  }
+  form.sepa .creditor-details {
+    background-color: #fff;
+    line-height: 25px;
+    margin: 40px 0 30px 0;
+    padding: 20px;
+  }
+  form.sepa .creditor-details label {
+    display: inline-block;
+    width: 40%;
+  }
+  form.sepa .creditor-details span {
+    display: inline-block;
+    width: 55%;
+  }
+  form.sepa .payment-type {
+    display: block;
+    position: relative;
+  }
+  form.sepa .payment-type span {
+    font-size: 80%;
+    font-weight: 700;
+  }
+  form.sepa .signature {
+    margin-top: 25px;
+  }
+  form.sepa .signature .input {
+    margin: 20px 0;
+  }
+  form.sepa .signature input[type="text"] {
+    border-radius: 0;
+    float: none;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+  }
+  form.sepa .signature .signature-container {
+    display: inline-block;
+    padding: 0 5px;
+    width: 622px;
+  }
+  form.sepa .footer {
+    overflow: hidden;
+    padding: 50px 0 20px 0;
+  }
+  form.sepa .footer .legal {
+    display: inline-block;
+    width: 70%;
+  }
+  form.sepa .footer p {
+    font-size: 70%;
+  }
+  form.sepa .footer img {
+    float: right;
+    margin-top: -25px;
+    width: 200px;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  

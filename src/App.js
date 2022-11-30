@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import { jsPDF } from "jspdf";
 import { useRef, useState } from "react";
 import { useReactToPrint } from "react-to-print";
 import Pdf from "./Components/Pdf";
